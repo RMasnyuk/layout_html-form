@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
   <fieldset>
     <legend>Personal information</legend>
     <div class="block">
@@ -56,10 +56,10 @@
       <label>What time do you go bed? <input type="time" name="time" required></label>
     </div>
     <div class="block">
-      <label>What your favorite brand of cars? <select name="cars" size="4">
-        <option>BMW</option>
-        <option>Audi</option>
-        <option>Lada</option>
+      <label>What your favorite brand of cars? <select name="cars" size="4" required>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Lada">Lada</option>
       </select></label>
     </div>
     <div class="block">
@@ -72,9 +72,9 @@
       <label>Comments: <textarea name="text" autocomplete="off" minlength="1" maxlength="100"></textarea></label>
     </div>
     <div class="block">
-      <label>Would you recommend us? <select name="recommend">
-        <option>yes</option>
-        <option>no</option>
+      <label>Would you recommend us? <select name="recommend" required>
+        <option value="yes">yes</option>
+        <option value="no">no</option>
       </select></label>
     </div>
   </fieldset>
